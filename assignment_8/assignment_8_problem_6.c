@@ -1,0 +1,15 @@
+#include<stdio.h>
+int disp_sum_all_digits(){
+    int num,o_num,sum=0;
+    printf("enter a number\n");
+    scanf("%d",&num);
+    o_num=num;
+    while(num>0){
+        sum=sum+num%10;
+        num/=10;
+    }
+    return sum;
+}
+void main(){
+    printf("sum of all digit=%d",disp_sum_all_digits());
+}
